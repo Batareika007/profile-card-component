@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
+  <main>
+  <!-- top left image circle -->
+  <img class="top_left_circle" src="images/bg-pattern-top.svg" alt="">
 
-  80K
-  Followers
+  <div class="person_card">
 
-  803K
-  Likes
+    <img class="top_card_image" src="images/bg-pattern-card.svg" alt="">
+    <img class="person_image" src="images/image-victor.jpg" alt="victor image">
+    <p class="person_name bold_text">Victor Crest <span class="regular_text"> 26</span></p>
+    <span class="regular_text"> London</span>
+    <hr>
+    
+    <div class="flexbox">
+      <div class="regular_text">
+       <span class="bold_text"> 80K</span>
+        Followers
+      </div>
+      <div class="regular_text">
+       <span class="bold_text"> 803K</span>
+        Likes
+      </div>
+      <div class="regular_text">
+        <span class="bold_text">1.4K</span>
+        Photos
+      </div>
+    </div>
+  </div>
 
-  1.4K
-  Photos
+<!-- bottom imahe circle -->
+  <img class="bottom_right_circle" src="images/bg-pattern-bottom.svg" alt="">
+
+</main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Batareika007/profile-card-component">Alexei</a>.
   </div>
 </body>
+
 </html>

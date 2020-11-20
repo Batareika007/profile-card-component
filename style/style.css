@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Kumbh Sans',
+    sans-serif;
+    font-size: 18px;
+}
+
+main{
+    margin: 0 auto;
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    overflow:hidden;
+}
+
+hr{
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.bold_text{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    /* margin-bottom: ; */
+  
+}
+
+.regular_text{
+   color: hsl(227, 10%, 46%);
+}
+
+
+
+
+
+/* background */
+
+.top_left_circle {
+    position: relative;
+    top: -50%;
+    right: 80px;
+    display: none;
+}
+
+.bottom_right_circle{
+    position: relative;
+    left: 45%;
+    top: -50%; 
+     display: none;
+}
+
+
+/* --------- person card -------- */
+.person_card{
+    margin: 0 auto;
+    width: 350px;
+    /* height: 400px; */
+    overflow:hidden;
+    border-radius: 5%;
+    background-color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.person_image {
+    border-radius: 50%;
+    border: solid white 6px;
+    position: relative;
+    top: -55px;
+}
+
+.flexbox{
+    display: flex;
+    padding: 30px;
+}
