@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -26,49 +25,76 @@
 </head>
 
 <body>
-  <main>
-  <!-- top left image circle -->
-  <img class="top_left_circle" src="images/bg-pattern-top.svg" alt="">
-
-  <!-- ======== person card ============= -->
-  <div class="person_card">
-
-    <img class="top_card_image" src="images/bg-pattern-card.svg" alt="">
-
-    
-    <img class="person_image" src="images/image-victor.jpg" alt="victor image">
-    <div>
-    <span class="person_name bold_text">Victor Crest</span>
-    <span class="regular_text"> 26</span>
-    </div>
-    
-    <span class="regular_text"> London</span>
-    <hr>
-    
-    <div class="flexbox">
-      <div class="regular_text">
-       <span class="bold_text"> 80K</span>
-        <span>Followers</span> 
-      </div>
-      <div class="regular_text">
-       <span class="bold_text"> 803K</span>
-        <span> Likes </span>
-      </div>
-      <div class="regular_text">
-        <span class="bold_text">1.4K</span>
-       <span> Photos</span>
-      </div>
-    </div>
+  <div class="pattern-top">
+    <img src="images/bg-pattern-top.svg" alt="top-pattern">
   </div>
 
-<!-- bottom imahe circle -->
-  <img class="bottom_right_circle" src="images/bg-pattern-bottom.svg" alt="">
+  <!-- ====== main container -->
 
-</main>
+  <div class="container">
+
+    <!-- ======== card ==========  -->
+
+    <section>
+      <img src="images/bg-pattern-card.svg" alt="pattern card">
+
+      <img class="card-picture" src="images/image-victor.jpg" alt="Victor picture">
+
+      <span class="person-name font-bold">
+        Victor Crest
+        <span class="person-age"> 26</span>
+      </span>
+      <span class="person-living-city">
+        London
+      </span>
+      <hr>
+
+      <!-- personal data -->
+
+      <div class="perosn-data">
+
+        <div class="data font-bold">
+          80K
+          <span class="small-text">
+            Followers
+          </span>
+        </div>
+        <div class="data font-bold">
+          803K
+          <span class="small-text">
+            Likes
+          </span>
+          
+        </div>
+
+        <div class="data font-bold">
+          1.4K
+          <span class="small-text">
+            Photos
+          </span>
+          
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="pattern-bottom">
+    <img src="images/bg-pattern-bottom.svg" alt="bottom-pattern">
+  </div>
+
+
+
+
+
+
+
+
+<footer>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/Batareika007/profile-card-component">Alexei</a>.
+    Coded by <a href="https://github.com/Batareika007">Alexei</a>.
   </div>
+  </footer>
 </body>
 
 </html>
