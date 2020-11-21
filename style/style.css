@@ -2,72 +2,110 @@ body {
     margin: 0;
     font-family: 'Kumbh Sans',
     sans-serif;
-    font-size: 18px;
-}
-
-main{
-    margin: 0 auto;
+    font-size: 18px;  
     background-color: hsl(185, 75%, 39%);
-    height: 100vh;
-    overflow:hidden;
+    overflow: hidden;
+    color: hsl(229, 23%, 23%);
 }
 
 hr{
-    border-top: 1px solid hsl(0, 0%, 59%);
+    border-top: solid 1px hsl(0, 0%, 59%);
 }
 
-.bold_text{
-    color: hsl(229, 23%, 23%);
+.font-bold{
     font-weight: 700;
-    /* margin-bottom: ; */
-  
 }
 
-.regular_text{
-   color: hsl(227, 10%, 46%);
+.small-text{
+    font-size: .7rem;
+    color: hsl(0, 0%, 59%);
+    display: block;
+    line-height: 20px;
 }
 
+/* ========= background  paterns ============ */
 
-
-
-
-/* background */
-
-.top_left_circle {
-    position: relative;
-    top: -50%;
-    right: 80px;
-    display: none;
+.pattern-top{
+    position: absolute;
+    left: -65px;
+    top: -511px;
+    /* border: 3px blue solid; */
+    z-index: 1;
 }
 
-.bottom_right_circle{
-    position: relative;
-    left: 45%;
-    top: -50%; 
-     display: none;
-}
-
-
-/* --------- person card -------- */
-.person_card{
-    margin: 0 auto;
-    width: 350px;
-    /* height: 400px; */
-    overflow:hidden;
-    border-radius: 5%;
-    background-color: #fff;
-    text-align: center;
+.pattern-bottom{
+    max-width: 100vh;
+    position: absolute;
+    right: -26px;
+    bottom: -335px;
+    /* border: 3px red solid; */
     z-index: 2;
 }
 
-.person_image {
-    border-radius: 50%;
-    border: solid white 6px;
+/*============ main page ================  */
+
+.container{
     position: relative;
-    top: -55px;
+    max-width: 1440px;
+    height: 720px;
+    margin: 0 auto;
+    background-color: hsl(185, 75%, 39%);
 }
 
-.flexbox{
-    display: flex;
-    padding: 30px;
+section{
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+    margin: 0 auto;
+    top:173px;
+    background-color: #ffffff;
+    width: 350px;
+    height: 385px;
+    text-align: center;
+    z-index: 3;
 }
+
+.card-picture{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 5px white solid;
+    top: -60px;
+}
+
+.person-name{
+    display: block;
+    margin-top: -35px;
+    margin-bottom: 9px;
+}
+
+.person-age{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.person-living-city{
+    display: block;
+    color: hsl(227, 10%, 46%);
+    margin-bottom: 30px;
+}
+
+.perosn-data {
+    margin-top: 30px;
+    display: flex;
+
+}
+
+.data{
+    flex: 1 1 auto;
+    line-height: 25px;
+}
+
+/* ==== footer ====== */
+
+footer{
+    color: #fff;
+}
+
+
