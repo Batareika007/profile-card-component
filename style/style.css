@@ -109,3 +109,25 @@ footer{
 }
 
 
+/* ======= mobile view ========== */
+
+@media (max-width: 400px){
+    .container{
+        width: 370px;
+        /* height: 100vh; */
+    }
+
+    
+    .pattern-top {
+        position: fixed;
+        left: -765px;
+        top: -511px;
+    }
+    
+    .pattern-bottom {
+       position: fixed;
+       width: 50%;
+       right: 50px;
+       bottom: -450px;
+    } 
+}
